@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.bootcamp.model">
+    <class name="Employee" table="employee">
+        <id name="employeeId" type="java.lang.String">
+            <column name="employee_id"/>
+            <generator class="uuid"/>
+        </id>
+        <property name="employeeName" type="java.lang.String">
+            <column name="employee_name"/>
+        </property>
+        <property name="employeeRole" type="java.lang.String">
+            <column name="employee_role"/>
+        </property>
+    </class>
+</hibernate-mapping>
